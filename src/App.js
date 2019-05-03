@@ -24,6 +24,7 @@ class App extends Component {
 
     this.setState({
       loading: true,
+      images: [],
     });
 
     api.search(this.state.imageSearch).then(images => {
@@ -62,7 +63,27 @@ class App extends Component {
         )}
         <section className="images">
           {images.map(image => (
-            <img src={image.urls.regular} alt="" />
+            <React.Fragment>
+              <div className="ImageResult">
+                <img key={image.id} src={image.urls.regular} alt="" />
+                <a
+                  href={image.links.html}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="view_link"
+                >
+                  View on Unsplash
+                </a>
+                <a
+                  href={image.user.links.html}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="user_link"
+                >
+                  Photo by: {image.user.name}
+                </a>
+              </div>
+            </React.Fragment>
           ))}
         </section>
         <div className="createdby">
