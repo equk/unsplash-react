@@ -1,4 +1,4 @@
-const API_CLIENTID = '';
+const API_CLIENTID = process.env.REACT_APP_API_CLIENTID;
 const API_URL = `https://api.unsplash.com/search/photos?page=1&per_page=20&client_id=${API_CLIENTID}`;
 
 export default {
