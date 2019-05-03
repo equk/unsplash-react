@@ -166,7 +166,7 @@ font-weight: normal; }
 /* Image Search Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-input#searchTerm.searchBox {
+input#imageSearch.searchBox {
   width: 600px;
   max-width: 60%;
   box-sizing: border-box;
