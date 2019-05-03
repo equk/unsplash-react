@@ -5,6 +5,10 @@
 
 requirements: [unsplash developer api key](https://unsplash.com/developers)
 
+add unsplash developer key to `.env` file in base of project
+
+    REACT_APP_API_CLIENTID="insert-api-key-here"
+
 ## unsplash references
 
 - https://unsplash.com/documentation
