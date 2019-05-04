@@ -14,6 +14,9 @@ add unsplash developer key to `.env` file in base of project
 
     REACT_APP_API_CLIENTID="insert-api-key-here"
 
+created as a working example of react.js & is based on [unsplash-js-search
+](https://github.com/equk/unsplash-js-search) (unsplash search using vanillajs)
+
 ## unsplash references
 
 - https://unsplash.com/documentation
