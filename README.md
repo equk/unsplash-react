@@ -1,7 +1,12 @@
 # unsplash-react
-:camera: unsplash search using react
+:camera: unsplash search using react.js
 
-- json api
+- [x] Stateful Components
+- [x] Loading Feedback
+- [x] Async API Requests
+- [x] API Key Seperated Using `.env`
+- [x] Conditional Rendering
+- [x] Virtual DOM
 
 requirements: [unsplash developer api key](https://unsplash.com/developers)
 
