@@ -5,7 +5,7 @@ export default {
   search(imageSearch) {
     const url = `${API_URL}&query=${imageSearch}`;
     return fetch(url)
-      .then(response => response.json())
-      .then(result => result.results);
+      .then((response) => response.json())
+      .then((result) => result.results);
   },
 };
