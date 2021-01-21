@@ -27,7 +27,7 @@ class App extends Component {
       images: [],
     });
 
-    api.search(this.state.imageSearch).then(images => {
+    api.search(this.state.imageSearch).then((images) => {
       this.setState({
         loading: false,
         images,
@@ -40,7 +40,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>{title}</h1>
-        <form onSubmit={event => this.formSubmitted(event)}>
+        <form onSubmit={(event) => this.formSubmitted(event)}>
           <label htmlFor="imageSearch">Image Search</label>
           <input
             className="searchBox"
@@ -48,7 +48,7 @@ class App extends Component {
             id="imageSearch"
             name="imageSearch"
             value={imageSearch}
-            onChange={event => this.imageSearchChanged(event)}
+            onChange={(event) => this.imageSearchChanged(event)}
           />
           <button type="submit">Search</button>
         </form>
@@ -62,8 +62,8 @@ class App extends Component {
           ''
         )}
         <section className="images">
-          {images.map(image => (
-            <React.Fragment>
+          {images.map((image) => (
+            <>
               <div className="ImageResult">
                 <img key={image.id} src={image.urls.regular} alt="" />
                 <a
@@ -83,7 +83,7 @@ class App extends Component {
                   Photo by: {image.user.name}
                 </a>
               </div>
-            </React.Fragment>
+            </>
           ))}
         </section>
         <div className="createdby">
